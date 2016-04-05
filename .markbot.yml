@@ -35,3 +35,7 @@ js:
     bestPractices: true
     search:
       - ['\$\(', 'Expected to see jQuery used']
+
+functionality:
+  - path: 'index.html'
+    noErrors: true
