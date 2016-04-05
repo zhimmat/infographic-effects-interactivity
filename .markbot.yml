@@ -15,6 +15,7 @@ html:
   - path: 'index.html'
     valid: true
     bestPractices: true
+    outline: true
     has:
       - 'link\[href="css/main\.css"\]'
       - 'script\[src=\*"jquery"\]'
