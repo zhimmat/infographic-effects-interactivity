@@ -20,7 +20,7 @@
 - Valid HTML following best practices.
 - Valid CSS following best practices.
 - Valid JS following best practices.
-- `css/main.css`, `js/main.css` & `jquery` is linked.
+- `css/main.css`, `js/main.js` & `jquery` is linked.
 - That jQuery is used in `main.js`.
 - `animation`, `transition`, `@keyframes`
 
@@ -53,7 +53,9 @@ In class, during week 14 you must show Thomas progress on the interactivity & ef
 
 In class, during week 15, we’ll be testing everybody’s website in different browsers to make sure they look good.
 
-**You’ll be required to submit screenshots for your website for every browser listed.**
+*You’ll be required to submit screenshots for your website for every browser listed.*
+
+**When I’m grading the websites I’ll be using a random browser to view your site.**
 
 ### 4. Request for grade
 
