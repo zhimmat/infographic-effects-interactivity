@@ -18,7 +18,7 @@ $whitenurses.waypoint(function (direction) {
   } else {
   $whitenurses.removeClass('js-whitenurses-animate');
 }
-}, { offset: '30%' });
+}, { offset: 'bottom-in-view' });
 
 $bluenurses.waypoint(function (direction) {
   if (direction == 'down') {
@@ -26,7 +26,7 @@ $bluenurses.waypoint(function (direction) {
   } else {
   $bluenurses.removeClass('js-bluenurses-animate');
 }
-}, { offset: '30%' });
+}, { offset: 'bottom-in-view' });
 
 $icons.waypoint(function (direction) {
   if (direction == 'down') {
@@ -34,7 +34,7 @@ $icons.waypoint(function (direction) {
   } else {
   $icons.removeClass('js-icons-animate');
 }
-}, { offset: '50%' });
+}, { offset: 'bottom-in-view' });
 
 $bottom.waypoint(function (direction) {
   if (direction == 'down') {
@@ -42,4 +42,4 @@ $bottom.waypoint(function (direction) {
   } else {
   $bottom.removeClass('js-bottom-animate');
 }
-}, { offset: '80%' });
+}, { offset: 'bottom-in-view' });
