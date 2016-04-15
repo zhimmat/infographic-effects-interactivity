@@ -20,6 +20,18 @@ html {
   box-sizing: inherit;
 }
 
+.grid {
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 0 1em;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-grid-animate {
+  opacity: 1;
+}
+
 .whitenurses {
   background-color: #77b39a;
 }
