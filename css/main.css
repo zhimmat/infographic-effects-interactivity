@@ -20,7 +20,7 @@ html {
   box-sizing: inherit;
 }
 
-.grid {
+.banner {
   margin: 0 auto;
   max-width: 45em;
   padding: 0 1em;
@@ -28,22 +28,58 @@ html {
   transition: all 200ms ease-in;
 }
 
-.js-grid-animate {
+.js-banner-animate {
   opacity: 1;
 }
 
 .whitenurses {
   background-color: #77b39a;
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 0 1em;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-whitenurses-animate {
+  opacity: 1;
 }
 
 .bluenurses {
   background-color: #77b39a;
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 0 1em;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-bluenurses-animate {
+  opacity: 1;
 }
 
 .icons {
   background-color: #73ae95;
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 0 1em;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-icons-animate {
+  opacity: 1;
 }
 
 .bottom {
   background-color: #6fa890;
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 0 1em;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-bottom-animate {
+  opacity: 1;
 }

@@ -1,36 +1,45 @@
-var $grid = $('.grid');
-var $plesiosaurs = $('.plesiosaurs');
-var $dinosaurs = $('.dinosaurs');
-var $pterosaours = $('.pterosaours');
+var $banner = $('.banner');
+var $whitenurses = $('.whitenurses');
+var $bluenurses = $('.bluenurses');
+var $icons = $('.icons');
+var $bottom = $('.bottom');
 
-$grid.waypoint(function (direction) {
+$banner.waypoint(function (direction) {
   if (direction == 'down') {
-    $grid.addClass('js-grid-animate');
+    $banner.addClass('js-banner-animate');
   } else {
-  $grid.removeClass('js-grid-animate');
+  $banner.removeClass('js-banner-animate');
 }
 }, { offset: '50%' });
 
-$plesiosaurs.waypoint(function (direction) {
+$whitenurses.waypoint(function (direction) {
   if (direction == 'down') {
-    $plesiosaurs.addClass('js-plesiosaurs-animate');
+    $whitenurses.addClass('js-whitenurses-animate');
   } else {
-  $plesiosaurs.removeClass('js-plesiosaurs-animate');
+  $whitenurses.removeClass('js-whitenurses-animate');
+}
+}, { offset: '30%' });
+
+$bluenurses.waypoint(function (direction) {
+  if (direction == 'down') {
+    $bluenurses.addClass('js-bluenurses-animate');
+  } else {
+  $bluenurses.removeClass('js-bluenurses-animate');
+}
+}, { offset: '30%' });
+
+$icons.waypoint(function (direction) {
+  if (direction == 'down') {
+    $icons.addClass('js-icons-animate');
+  } else {
+  $icons.removeClass('js-icons-animate');
 }
 }, { offset: '50%' });
 
-$dinosaurs.waypoint(function (direction) {
+$bottom.waypoint(function (direction) {
   if (direction == 'down') {
-    $dinosaurs.addClass('js-dinosaurs-animate');
+    $bottom.addClass('js-bottom-animate');
   } else {
-  $dinosaurs.removeClass('js-dinosaurs-animate');
+  $bottom.removeClass('js-bottom-animate');
 }
-}, { offset: '50%' });
-
-$pterosaours.waypoint(function (direction) {
-  if (direction == 'down') {
-    $pterosaours.addClass('js-pterosaours-animate');
-  } else {
-  $pterosaours.removeClass('js-pterosaours-animate');
-}
-}, { offset: '50%' });
+}, { offset: '80%' });
