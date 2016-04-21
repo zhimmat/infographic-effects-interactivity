@@ -1,3 +1,8 @@
+var $body = $('body');
+
+var $btnMove = $('.btn-move');
+var $ambulance = $('.ambulance');
+
 var $banner = $('.banner');
 var $whitenurses = $('.whitenurses');
 var $bluenurses = $('.bluenurses');
@@ -10,7 +15,7 @@ $banner.waypoint(function (direction) {
   } else {
   $banner.removeClass('js-banner-animate');
 }
-}, { offset: '50%' });
+}, { offset: 'bottom-in-view' });
 
 $whitenurses.waypoint(function (direction) {
   if (direction == 'down') {
@@ -43,3 +48,7 @@ $bottom.waypoint(function (direction) {
   $bottom.removeClass('js-bottom-animate');
 }
 }, { offset: 'bottom-in-view' });
+
+$btnMove.on('click', function () {
+  $ambulance.toggleClass('btn-slide');
+});

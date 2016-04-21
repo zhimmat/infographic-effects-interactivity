@@ -83,3 +83,42 @@ html {
 .js-bottom-animate {
   opacity: 1;
 }
+
+.number1{
+  animation: number-jiggle 1s infinite ease-in-out;
+}
+
+.number2{
+  animation: number-jiggle 1s infinite ease-in-out;
+}
+
+.ambulance {
+  transition: all .2s linear;
+}
+
+.btn-slide {
+  right:50px;
+}
+
+section {
+  overflow: hidden;
+  padding: 4em 1em;
+  position: relative;
+}
+@keyframes number-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
