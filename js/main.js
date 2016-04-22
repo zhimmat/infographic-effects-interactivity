@@ -1,13 +1,15 @@
-var $body = $('body');
+$('ul').localScroll();
 
-var $btnMove = $('.btn-move');
-var $ambulance = $('.ambulance');
+var $body = $('body');
 
 var $banner = $('.banner');
 var $whitenurses = $('.whitenurses');
 var $bluenurses = $('.bluenurses');
 var $icons = $('.icons');
 var $bottom = $('.bottom');
+
+var $btnMove = $('.btn-move');
+var $ambulance = $('.ambulance');
 
 $banner.waypoint(function (direction) {
   if (direction == 'down') {

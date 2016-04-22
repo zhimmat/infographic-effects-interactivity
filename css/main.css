@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: times, serif;
+  font: normal 100%/1.3 sans-serif;
   font-size: 100%;
   line-height: 1.5;
   background-color: #7cbaa0;
@@ -18,6 +18,34 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+h1 {
+  color:#C82D38;
+  margin: 0 0 .5rem;
+  font-size: 1.5rem;
+}
+
+header {
+  padding: .5rem 0;
+  background-color: #83c4a7;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: .5em .75em;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #73ae95;
+  color: #fff;
 }
 
 .banner {
@@ -105,6 +133,7 @@ section {
   padding: 4em 1em;
   position: relative;
 }
+
 @keyframes number-jiggle {
   0% {
     transform: rotate(0);
@@ -121,4 +150,45 @@ section {
   100% {
     transform: rotate(0deg);
   }
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav li {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  h1,
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
+
 }
