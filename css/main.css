@@ -9,7 +9,6 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   font: normal 100%/1.3 sans-serif;
   font-size: 100%;
   line-height: 1.5;
@@ -122,16 +121,31 @@ nav a:hover {
 
 .ambulance {
   transition: all .2s linear;
+  animation: ambulanceshift 5s linear infinite;
 }
 
-.btn-slide {
-  right:50px;
-}
 
-section {
-  overflow: hidden;
-  padding: 4em 1em;
-  position: relative;
+@keyframes ambulanceshift {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-500px, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(500px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes number-jiggle {
@@ -151,6 +165,7 @@ section {
     transform: rotate(0deg);
   }
 }
+
 
 @media only screen and (min-width: 25em) {
 
