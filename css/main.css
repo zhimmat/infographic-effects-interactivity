@@ -20,7 +20,7 @@ html {
 }
 
 h1 {
-  color:#C82D38;
+  color: #c82d38;
   margin: 0 0 .5rem;
   font-size: 1.5rem;
 }
@@ -111,11 +111,11 @@ nav a:hover {
   opacity: 1;
 }
 
-.number1{
+.number1 {
   animation: number-jiggle 1s infinite ease-in-out;
 }
 
-.number2{
+.number2 {
   animation: number-jiggle 1s infinite ease-in-out;
 }
 
@@ -123,7 +123,6 @@ nav a:hover {
   transition: all .2s linear;
   animation: ambulanceshift 5s linear infinite;
 }
-
 
 @keyframes ambulanceshift {
 
@@ -149,23 +148,27 @@ nav a:hover {
 }
 
 @keyframes number-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   25% {
     transform: rotate(.5deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(-.5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
-
 
 @media only screen and (min-width: 25em) {
 
@@ -181,8 +184,9 @@ nav a:hover {
     font-size: 110%;
     line-height: 1.4;
   }
+}
 
-  @media only screen and (min-width: 60em)  {
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
